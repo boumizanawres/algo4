@@ -1,0 +1,19 @@
+PROCEDURE INSERTIONSORT ( V1 : ARRAY_OF FLOAT)
+VAR 
+i,j:INTEGER
+S:FLOAT
+BEGIN
+FOR i FROM 1 TO V1.lenght STEP 1 DO
+{
+ S:= V1[i];
+ j=i-1 ;
+ while (j>=0 AND V1[j]>S){
+     V1[j+1]=V1[j]
+     j=j-1
+ }
+ V1[j+1]=S
+ }
+
+
+
+END_FOR
